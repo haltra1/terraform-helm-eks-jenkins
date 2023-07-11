@@ -1,5 +1,5 @@
 module "my-cluster" {
-  source  = "terraform-aws-modules/eks/aws"
+  source = "terraform-aws-modules/eks/aws"
   version = "18.28.0"
 
   cluster_name    = var.cluster_name

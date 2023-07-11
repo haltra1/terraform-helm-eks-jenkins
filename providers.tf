@@ -10,7 +10,7 @@ terraform {
         version = "2.12.1"
     }
   }
-  required_version = "~> 1.2.6"
+  required_version = "~> 1.5.2"
 }
 
 provider "helm" {
