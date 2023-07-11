@@ -1,9 +1,6 @@
-# DEPLOY HELM CHARTS LIKE JENKINS AND EKS USING TERRAFORM 
+# DEPLOY EKS Cluster with Jenkins using Terraform and Helm 
 
-Need some apps on that cluster really fast? Use Terraforms Helm Provider on top of their Kubernetes provider to quickly deploy EKS clusters with your apps on top
-of them. In this example, I'm deploying Jenkins on EKS. It takes about 15 minutes from start to finish and minimal work. 
-
->Note: This is not meant for production!!
+>Note: This is not meant for production!! 
 
 ### Pre-requisites
 
@@ -85,14 +82,5 @@ of them. In this example, I'm deploying Jenkins on EKS. It takes about 15 minute
 | worker\_group\_instance\_type | The instance type of the worker group nodes. Must be large enough to support the amount of NICS assigned to pods. | `list(string)` | <pre>[<br>  "t3.medium"<br>]</pre> | no |
 | worker\_group\_name | The name of the EKS worker node group. | `string` | `"dev-worker-group-1"` | no |
 
-### Troubleshooting
 
-#### Pods stuck in Pending
-* Possibility of resources not efficient. The instances in the worker group could be too small to assign IP addresses to all the pods
-
-#### Workers not joining the cluster
-* Ensure the workers are getting public IP addresses
-
-#### Pods Crashing
-* Run ```kubectl logs --previous -p jenkins-0 -c init``` to view the logs for the Jenkins init container. 
 
