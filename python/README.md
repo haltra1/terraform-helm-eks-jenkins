@@ -18,8 +18,6 @@ Before running this microservice, ensure that you have the following:
    ```shell
    $ pip install flask requests
 
-## Usage
-
 Usage
 -----
 
@@ -28,8 +26,6 @@ Usage
 2.  In the `weather_service.py` file, replace 'YOUR_API_KEY' with your actual Open-Meteo API key.
 
 3.  Run the microservice by executing the following command:
-
-    shellCopy code
 
     `$ python weather_service.py`
 
