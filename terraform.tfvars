@@ -21,4 +21,4 @@ autoscaling_group_desired_capacity = 2
 # Jenkins Settings
 # ------------------------------------------------------------
 jenkins_admin_user = "admin"
-jenkins_admin_password = "password"
+jenkins_admin_password = ""

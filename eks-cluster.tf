@@ -27,6 +27,7 @@ module "my-cluster" {
       capacity_type  = "SPOT"
       labels = {
         Environment = "dev"
+        
       }
     }
   }

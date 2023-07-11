@@ -102,4 +102,5 @@ resource "aws_security_group" "allow-web-traffic" {
   tags = {
     Name = "allow-web"
   }
+  
 }

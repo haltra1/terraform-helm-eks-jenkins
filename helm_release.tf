@@ -1,4 +1,4 @@
-/*resource "helm_release" "jenkins" {
+resource "helm_release" "jenkins" {
   name       = "jenkins"
   repository = "https://charts.jenkins.io"
   chart      = "jenkins"
@@ -16,4 +16,4 @@
     name  = "controller.adminPassword"
     value = var.jenkins_admin_password
   }
-} */
+} 
